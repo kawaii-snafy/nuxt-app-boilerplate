@@ -1,0 +1,10 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "eslint.useFlatConfig": true,
+  "nuxtr.vueFiles.style.alwaysScoped": true,
+  "nuxtr.defaultPackageManager": "NPM",
+  "nuxtr.piniaFiles.defaultTemplate": "setup",
+  "nuxtr.openItemsAfterCreation": true
+}
