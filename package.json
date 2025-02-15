@@ -11,19 +11,37 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier .",
-    "format:fix": "prettier . --write"
+    "format:fix": "prettier . --write",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "./**/*.{json,md}": [
+      "prettier --ignore-unknown --write"
+    ],
+    "./**/*.{vue,js,jsx,ts,tsx}": [
+      "eslint --max-warnings=0 --no-warn-ignored --fix"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "dependencies": {
     "@nuxt/eslint": "^1.0.1",
     "@nuxt/ui": "^2.21.0",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-prettier": "^5.2.3",
     "nuxt": "^3.15.4",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
     "eslint": "^9.20.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
     "prettier": "^3.5.0",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "typescript": "^5.7.3"
