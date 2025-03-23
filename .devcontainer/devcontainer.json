@@ -29,7 +29,9 @@
       "extensions": [
         "Nuxtr.nuxt-vscode-extentions",
         "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint"
+        "dbaeumer.vscode-eslint",
+        "bradlc.vscode-tailwindcss",
+        "antfu.iconify"
       ]
     }
   }
